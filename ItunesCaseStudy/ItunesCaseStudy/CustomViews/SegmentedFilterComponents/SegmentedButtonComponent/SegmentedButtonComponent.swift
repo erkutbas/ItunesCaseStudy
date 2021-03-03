@@ -47,6 +47,14 @@ class SegmentedButtonComponent: GenericBaseView<SegmentedButtonComponentData> {
         containerView.backgroundColor = data.containerBackgroundColor
         containerView.layer.cornerRadius = data.cornerRadius
         selector.layer.cornerRadius = data.cornerRadius - 1
+        focusSelectedIndex()
+    }
+    
+    private func focusSelectedIndex() {
+        guard let data = returnData(), let focusedSegment = data.focusedSegment else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.changeSelectorPosition(by: focusedSegment)
+        }
     }
     
     private func addComponentViews() {
@@ -93,7 +101,6 @@ class SegmentedButtonComponent: GenericBaseView<SegmentedButtonComponentData> {
     }
     
     private lazy var buttonClickedListener: ButtonActionType = { [weak self] (actionIndex) in
-        print("takasi index : \(actionIndex)")
         self?.changeSelectorPosition(by: actionIndex)
     }
     

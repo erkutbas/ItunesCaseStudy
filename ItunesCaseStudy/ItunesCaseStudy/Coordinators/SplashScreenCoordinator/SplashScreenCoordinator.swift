@@ -1,6 +1,6 @@
 //
 //  SplashScreenCoordinator.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 25.02.2021.
 //

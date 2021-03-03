@@ -1,6 +1,6 @@
 //
 //  FilterViewLocalizables.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 27.02.2021.
 //
@@ -14,8 +14,8 @@ enum FilterViewLocalizables: GenericValueProtocol {
     case cancel
     case movie
     case music
-    case podcast
-    case all
+    case app
+    case book
     
     var value: String {
         switch self {
@@ -25,10 +25,10 @@ enum FilterViewLocalizables: GenericValueProtocol {
             return "movie".toLocalize()
         case .music:
             return "music".toLocalize()
-        case .podcast:
-            return "podcast".toLocalize()
-        case .all:
-            return "all".toLocalize()
+        case .app:
+            return "app".toLocalize()
+        case .book:
+            return "book".toLocalize()
         }
     }
     

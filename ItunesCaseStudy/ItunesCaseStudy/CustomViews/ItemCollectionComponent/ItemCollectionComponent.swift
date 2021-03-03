@@ -1,6 +1,6 @@
 //
 //  ItemCollectionComponent.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 26.02.2021.
 //

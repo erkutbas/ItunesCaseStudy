@@ -13,6 +13,15 @@
 		A773195825EEB7C200525B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A773195625EEB7C200525B31 /* LaunchScreen.storyboard */; };
 		A773196325EEB7C200525B31 /* ItunesCaseStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773196225EEB7C200525B31 /* ItunesCaseStudyTests.swift */; };
 		A773196E25EEB7C200525B31 /* ItunesCaseStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773196D25EEB7C200525B31 /* ItunesCaseStudyUITests.swift */; };
+		A799C43325F01AC200181BE3 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A799C42E25F01AC200181BE3 /* Alert.storyboard */; };
+		A799C43425F01AC200181BE3 /* AlertViewCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C42F25F01AC200181BE3 /* AlertViewCoordinatorDelegate.swift */; };
+		A799C43525F01AC200181BE3 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C43025F01AC200181BE3 /* AlertViewModel.swift */; };
+		A799C43625F01AC200181BE3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C43125F01AC200181BE3 /* AlertViewController.swift */; };
+		A799C43725F01AC200181BE3 /* AlertViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C43225F01AC200181BE3 /* AlertViewCoordinator.swift */; };
+		A799C43F25F01B0600181BE3 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C43D25F01B0500181BE3 /* AlertButton.swift */; };
+		A799C44025F01B0600181BE3 /* AlertButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C43E25F01B0500181BE3 /* AlertButtonData.swift */; };
+		A799C44D25F01CF100181BE3 /* VisualContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C44C25F01CF100181BE3 /* VisualContent.swift */; };
+		A799C45325F01E5D00181BE3 /* MainCoordinatorConstantValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799C45225F01E5D00181BE3 /* MainCoordinatorConstantValues.swift */; };
 		A7CE7E2025EEBCD900722D66 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E0C25EEBCD900722D66 /* DependencyManager.swift */; };
 		A7CE7E2125EEBCD900722D66 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E0D25EEBCD900722D66 /* Resolver.swift */; };
 		A7CE7E2225EEBCD900722D66 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E0E25EEBCD900722D66 /* Inject.swift */; };
@@ -20,10 +29,8 @@
 		A7CE7E2625EEBCD900722D66 /* SearchOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E1425EEBCD900722D66 /* SearchOperationFactory.swift */; };
 		A7CE7E2825EEBCD900722D66 /* APIManagerInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E1625EEBCD900722D66 /* APIManagerInjectable.swift */; };
 		A7CE7E2925EEBCD900722D66 /* FilterSearchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E1825EEBCD900722D66 /* FilterSearchStore.swift */; };
-		A7CE7E2D25EEBCD900722D66 /* PopOverControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E1D25EEBCD900722D66 /* PopOverControllerManager.swift */; };
 		A7CE7E2E25EEBCD900722D66 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E1F25EEBCD900722D66 /* ImageCacheManager.swift */; };
 		A7CE7E4A25EEBCE500722D66 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E3425EEBCE500722D66 /* BaseCoordinator.swift */; };
-		A7CE7E4B25EEBCE500722D66 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E3625EEBCE500722D66 /* ErrorResult.swift */; };
 		A7CE7E4C25EEBCE500722D66 /* GenericDataTypealises.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E3825EEBCE500722D66 /* GenericDataTypealises.swift */; };
 		A7CE7E4D25EEBCE500722D66 /* CommonTypealises.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E3925EEBCE500722D66 /* CommonTypealises.swift */; };
 		A7CE7E4E25EEBCE600722D66 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E3B25EEBCE500722D66 /* BaseViewController.swift */; };
@@ -44,11 +51,6 @@
 		A7CE7E7A25EEBD1700722D66 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CE7E6225EEBD1700722D66 /* ItemDetail.storyboard */; };
 		A7CE7E7B25EEBD1700722D66 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6325EEBD1700722D66 /* ItemDetailViewController.swift */; };
 		A7CE7E7C25EEBD1700722D66 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6425EEBD1700722D66 /* ItemDetailViewModel.swift */; };
-		A7CE7E7D25EEBD1700722D66 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CE7E6625EEBD1700722D66 /* Alert.storyboard */; };
-		A7CE7E7E25EEBD1700722D66 /* AlertViewCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6725EEBD1700722D66 /* AlertViewCoordinatorDelegate.swift */; };
-		A7CE7E7F25EEBD1700722D66 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6825EEBD1700722D66 /* AlertViewModel.swift */; };
-		A7CE7E8025EEBD1700722D66 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6925EEBD1700722D66 /* AlertViewController.swift */; };
-		A7CE7E8125EEBD1700722D66 /* AlertViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6A25EEBD1700722D66 /* AlertViewCoordinator.swift */; };
 		A7CE7E8225EEBD1700722D66 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6C25EEBD1700722D66 /* AppCoordinator.swift */; };
 		A7CE7E8325EEBD1700722D66 /* SplashScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E6E25EEBD1700722D66 /* SplashScreenCoordinator.swift */; };
 		A7CE7E8425EEBD1700722D66 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CE7E6F25EEBD1700722D66 /* SplashScreen.storyboard */; };
@@ -65,7 +67,6 @@
 		A7CE7EC625EEBD1E00722D66 /* AlertViewLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9525EEBD1E00722D66 /* AlertViewLocalizables.swift */; };
 		A7CE7EC725EEBD1E00722D66 /* ItemDetailLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9625EEBD1E00722D66 /* ItemDetailLocalizables.swift */; };
 		A7CE7EC825EEBD1E00722D66 /* MainViewLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9725EEBD1E00722D66 /* MainViewLocalizables.swift */; };
-		A7CE7EC925EEBD1E00722D66 /* VisualContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9925EEBD1E00722D66 /* VisualContent.swift */; };
 		A7CE7ECA25EEBD1E00722D66 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9B25EEBD1E00722D66 /* UIView+Extension.swift */; };
 		A7CE7ECB25EEBD1E00722D66 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9C25EEBD1E00722D66 /* String+Extension.swift */; };
 		A7CE7ECC25EEBD1E00722D66 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE7E9D25EEBD1E00722D66 /* UserDefaults+Extension.swift */; };
@@ -186,6 +187,15 @@
 		A773196925EEB7C200525B31 /* ItunesCaseStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesCaseStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A773196D25EEB7C200525B31 /* ItunesCaseStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesCaseStudyUITests.swift; sourceTree = "<group>"; };
 		A773196F25EEB7C200525B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A799C42E25F01AC200181BE3 /* Alert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
+		A799C42F25F01AC200181BE3 /* AlertViewCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		A799C43025F01AC200181BE3 /* AlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		A799C43125F01AC200181BE3 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		A799C43225F01AC200181BE3 /* AlertViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCoordinator.swift; sourceTree = "<group>"; };
+		A799C43D25F01B0500181BE3 /* AlertButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		A799C43E25F01B0500181BE3 /* AlertButtonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButtonData.swift; sourceTree = "<group>"; };
+		A799C44C25F01CF100181BE3 /* VisualContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualContent.swift; sourceTree = "<group>"; };
+		A799C45225F01E5D00181BE3 /* MainCoordinatorConstantValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorConstantValues.swift; sourceTree = "<group>"; };
 		A7CE7E0C25EEBCD900722D66 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		A7CE7E0D25EEBCD900722D66 /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		A7CE7E0E25EEBCD900722D66 /* Inject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
@@ -193,10 +203,8 @@
 		A7CE7E1425EEBCD900722D66 /* SearchOperationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchOperationFactory.swift; sourceTree = "<group>"; };
 		A7CE7E1625EEBCD900722D66 /* APIManagerInjectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerInjectable.swift; sourceTree = "<group>"; };
 		A7CE7E1825EEBCD900722D66 /* FilterSearchStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterSearchStore.swift; sourceTree = "<group>"; };
-		A7CE7E1D25EEBCD900722D66 /* PopOverControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverControllerManager.swift; sourceTree = "<group>"; };
 		A7CE7E1F25EEBCD900722D66 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		A7CE7E3425EEBCE500722D66 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		A7CE7E3625EEBCE500722D66 /* ErrorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
 		A7CE7E3825EEBCE500722D66 /* GenericDataTypealises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDataTypealises.swift; sourceTree = "<group>"; };
 		A7CE7E3925EEBCE500722D66 /* CommonTypealises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypealises.swift; sourceTree = "<group>"; };
 		A7CE7E3B25EEBCE500722D66 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -217,11 +225,6 @@
 		A7CE7E6225EEBD1700722D66 /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		A7CE7E6325EEBD1700722D66 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		A7CE7E6425EEBD1700722D66 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
-		A7CE7E6625EEBD1700722D66 /* Alert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
-		A7CE7E6725EEBD1700722D66 /* AlertViewCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCoordinatorDelegate.swift; sourceTree = "<group>"; };
-		A7CE7E6825EEBD1700722D66 /* AlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
-		A7CE7E6925EEBD1700722D66 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
-		A7CE7E6A25EEBD1700722D66 /* AlertViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCoordinator.swift; sourceTree = "<group>"; };
 		A7CE7E6C25EEBD1700722D66 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A7CE7E6E25EEBD1700722D66 /* SplashScreenCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenCoordinator.swift; sourceTree = "<group>"; };
 		A7CE7E6F25EEBD1700722D66 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -238,7 +241,6 @@
 		A7CE7E9525EEBD1E00722D66 /* AlertViewLocalizables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewLocalizables.swift; sourceTree = "<group>"; };
 		A7CE7E9625EEBD1E00722D66 /* ItemDetailLocalizables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailLocalizables.swift; sourceTree = "<group>"; };
 		A7CE7E9725EEBD1E00722D66 /* MainViewLocalizables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewLocalizables.swift; sourceTree = "<group>"; };
-		A7CE7E9925EEBD1E00722D66 /* VisualContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualContent.swift; sourceTree = "<group>"; };
 		A7CE7E9B25EEBD1E00722D66 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A7CE7E9C25EEBD1E00722D66 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A7CE7E9D25EEBD1E00722D66 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
@@ -363,16 +365,16 @@
 		A773194725EEB7C100525B31 /* ItunesCaseStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A7CE7E5F25EEBD1700722D66 /* Coordinators */,
 				A7CE7EF025EEBD2500722D66 /* CustomViews */,
 				A7CE7E8F25EEBD1E00722D66 /* Utilities */,
-				A7CE7E5F25EEBD1700722D66 /* Coordinators */,
-				A7CE7E3225EEBCE500722D66 /* BaseModules */,
 				A7CE7E0A25EEBCD900722D66 /* Managers */,
+				A7CE7E3225EEBCE500722D66 /* BaseModules */,
 				A773194825EEB7C100525B31 /* AppDelegate.swift */,
 				A773195425EEB7C200525B31 /* Assets.xcassets */,
-				A773195625EEB7C200525B31 /* LaunchScreen.storyboard */,
-				A773195925EEB7C200525B31 /* Info.plist */,
 				A773195125EEB7C100525B31 /* ItunesCaseStudy.xcdatamodeld */,
+				A773195925EEB7C200525B31 /* Info.plist */,
+				A773195625EEB7C200525B31 /* LaunchScreen.storyboard */,
 				A7CE7F4325EEBDC900722D66 /* Localizable.strings */,
 			);
 			path = ItunesCaseStudy;
@@ -396,13 +398,41 @@
 			path = ItunesCaseStudyUITests;
 			sourceTree = "<group>";
 		};
+		A799C42D25F01AC200181BE3 /* AlertCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A799C42E25F01AC200181BE3 /* Alert.storyboard */,
+				A799C42F25F01AC200181BE3 /* AlertViewCoordinatorDelegate.swift */,
+				A799C43025F01AC200181BE3 /* AlertViewModel.swift */,
+				A799C43125F01AC200181BE3 /* AlertViewController.swift */,
+				A799C43225F01AC200181BE3 /* AlertViewCoordinator.swift */,
+			);
+			path = AlertCoordinator;
+			sourceTree = "<group>";
+		};
+		A799C43C25F01B0500181BE3 /* AlertButton */ = {
+			isa = PBXGroup;
+			children = (
+				A799C43D25F01B0500181BE3 /* AlertButton.swift */,
+				A799C43E25F01B0500181BE3 /* AlertButtonData.swift */,
+			);
+			path = AlertButton;
+			sourceTree = "<group>";
+		};
+		A799C44B25F01CF100181BE3 /* VisualContents */ = {
+			isa = PBXGroup;
+			children = (
+				A799C44C25F01CF100181BE3 /* VisualContent.swift */,
+			);
+			path = VisualContents;
+			sourceTree = "<group>";
+		};
 		A7CE7E0A25EEBCD900722D66 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				A7CE7E0B25EEBCD900722D66 /* DependencyManagers */,
 				A7CE7E1325EEBCD900722D66 /* FactoryManagers */,
 				A7CE7E1725EEBCD900722D66 /* UserDefaultOperators */,
-				A7CE7E1C25EEBCD900722D66 /* UIManagers */,
 				A7CE7E1E25EEBCD900722D66 /* ImageOperationManagers */,
 			);
 			path = Managers;
@@ -436,14 +466,6 @@
 			path = UserDefaultOperators;
 			sourceTree = "<group>";
 		};
-		A7CE7E1C25EEBCD900722D66 /* UIManagers */ = {
-			isa = PBXGroup;
-			children = (
-				A7CE7E1D25EEBCD900722D66 /* PopOverControllerManager.swift */,
-			);
-			path = UIManagers;
-			sourceTree = "<group>";
-		};
 		A7CE7E1E25EEBCD900722D66 /* ImageOperationManagers */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,7 +478,6 @@
 			isa = PBXGroup;
 			children = (
 				A7CE7E3325EEBCE500722D66 /* Coordinator */,
-				A7CE7E3525EEBCE500722D66 /* Models */,
 				A7CE7E3725EEBCE500722D66 /* Typealises */,
 				A7CE7E3A25EEBCE500722D66 /* Views */,
 				A7CE7E4225EEBCE500722D66 /* Protocols */,
@@ -470,14 +491,6 @@
 				A7CE7E3425EEBCE500722D66 /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		A7CE7E3525EEBCE500722D66 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A7CE7E3625EEBCE500722D66 /* ErrorResult.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		A7CE7E3725EEBCE500722D66 /* Typealises */ = {
@@ -520,11 +533,11 @@
 		A7CE7E5F25EEBD1700722D66 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				A7CE7E6025EEBD1700722D66 /* ItemDetailCoordinator */,
-				A7CE7E6525EEBD1700722D66 /* AlertCoordinator */,
+				A799C42D25F01AC200181BE3 /* AlertCoordinator */,
 				A7CE7E6B25EEBD1700722D66 /* ApplicationCoordinator */,
-				A7CE7E6D25EEBD1700722D66 /* SplashScreenCoordinator */,
+				A7CE7E6025EEBD1700722D66 /* ItemDetailCoordinator */,
 				A7CE7E7225EEBD1700722D66 /* MainCoordinator */,
+				A7CE7E6D25EEBD1700722D66 /* SplashScreenCoordinator */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -538,18 +551,6 @@
 				A7CE7E6425EEBD1700722D66 /* ItemDetailViewModel.swift */,
 			);
 			path = ItemDetailCoordinator;
-			sourceTree = "<group>";
-		};
-		A7CE7E6525EEBD1700722D66 /* AlertCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				A7CE7E6625EEBD1700722D66 /* Alert.storyboard */,
-				A7CE7E6725EEBD1700722D66 /* AlertViewCoordinatorDelegate.swift */,
-				A7CE7E6825EEBD1700722D66 /* AlertViewModel.swift */,
-				A7CE7E6925EEBD1700722D66 /* AlertViewController.swift */,
-				A7CE7E6A25EEBD1700722D66 /* AlertViewCoordinator.swift */,
-			);
-			path = AlertCoordinator;
 			sourceTree = "<group>";
 		};
 		A7CE7E6B25EEBD1700722D66 /* ApplicationCoordinator */ = {
@@ -575,9 +576,9 @@
 			isa = PBXGroup;
 			children = (
 				A7CE7E7325EEBD1700722D66 /* MainViewController.swift */,
+				A7CE7E7825EEBD1700722D66 /* MainViewCoordinator.swift */,
 				A7CE7E7425EEBD1700722D66 /* MainViewModel.swift */,
 				A7CE7E7525EEBD1700722D66 /* SupportingFiles */,
-				A7CE7E7825EEBD1700722D66 /* MainViewCoordinator.swift */,
 			);
 			path = MainCoordinator;
 			sourceTree = "<group>";
@@ -587,6 +588,7 @@
 			children = (
 				A7CE7E7625EEBD1700722D66 /* PaginationInfo.swift */,
 				A7CE7E7725EEBD1700722D66 /* SearchResultUpdater.swift */,
+				A799C45225F01E5D00181BE3 /* MainCoordinatorConstantValues.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -594,12 +596,12 @@
 		A7CE7E8F25EEBD1E00722D66 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A7CE7E9025EEBD1E00722D66 /* PropertyWrappers */,
-				A7CE7E9325EEBD1E00722D66 /* LocalizableManagers */,
-				A7CE7E9825EEBD1E00722D66 /* VisualContents */,
 				A7CE7E9A25EEBD1E00722D66 /* Extensions */,
 				A7CE7E9E25EEBD1E00722D66 /* FontFiles */,
+				A7CE7E9325EEBD1E00722D66 /* LocalizableManagers */,
+				A7CE7E9025EEBD1E00722D66 /* PropertyWrappers */,
 				A7CE7EC125EEBD1E00722D66 /* ViewControllerUtilities */,
+				A799C44B25F01CF100181BE3 /* VisualContents */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -622,14 +624,6 @@
 				A7CE7E9725EEBD1E00722D66 /* MainViewLocalizables.swift */,
 			);
 			path = LocalizableManagers;
-			sourceTree = "<group>";
-		};
-		A7CE7E9825EEBD1E00722D66 /* VisualContents */ = {
-			isa = PBXGroup;
-			children = (
-				A7CE7E9925EEBD1E00722D66 /* VisualContent.swift */,
-			);
-			path = VisualContents;
 			sourceTree = "<group>";
 		};
 		A7CE7E9A25EEBD1E00722D66 /* Extensions */ = {
@@ -715,14 +709,15 @@
 		A7CE7EF025EEBD2500722D66 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				A7CE7F5C25EEC52F00722D66 /* SegmentedFilterComponents */,
+				A799C43C25F01B0500181BE3 /* AlertButton */,
 				A7CE7EF125EEBD2500722D66 /* CollectionCells */,
-				A7CE7EF425EEBD2500722D66 /* TitleInfoViewComponent */,
-				A7CE7EF725EEBD2500722D66 /* ItemDetailViews */,
-				A7CE7EFA25EEBD2500722D66 /* ItemCollectionComponent */,
+				A7CE7F1225EEBD2500722D66 /* CustomHeaderViews */,
 				A7CE7F0125EEBD2500722D66 /* CustomImageViewComponent */,
 				A7CE7F0625EEBD2500722D66 /* DimmingView */,
-				A7CE7F1225EEBD2500722D66 /* CustomHeaderViews */,
+				A7CE7EFA25EEBD2500722D66 /* ItemCollectionComponent */,
+				A7CE7EF725EEBD2500722D66 /* ItemDetailViews */,
+				A7CE7F5C25EEC52F00722D66 /* SegmentedFilterComponents */,
+				A7CE7EF425EEBD2500722D66 /* TitleInfoViewComponent */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -961,6 +956,7 @@
 				A7CE7EE425EEBD1E00722D66 /* SourceSansPro-LightItalic.ttf in Resources */,
 				A7CE7ECD25EEBD1E00722D66 /* Metropolis-Bold.otf in Resources */,
 				A7CE7EE525EEBD1E00722D66 /* SourceSansPro-Light.ttf in Resources */,
+				A799C43325F01AC200181BE3 /* Alert.storyboard in Resources */,
 				A7CE7EDB25EEBD1E00722D66 /* Metropolis-LightItalic.otf in Resources */,
 				A7CE7ED525EEBD1E00722D66 /* Metropolis-ExtraLightItalic.otf in Resources */,
 				A7CE7F4125EEBDC900722D66 /* Localizable.strings in Resources */,
@@ -975,7 +971,6 @@
 				A7CE7ED425EEBD1E00722D66 /* Metropolis-Black.otf in Resources */,
 				A7CE7EE825EEBD1E00722D66 /* SourceSansPro-BoldItalic.ttf in Resources */,
 				A7CE7ECF25EEBD1E00722D66 /* Metropolis-RegularItalic.otf in Resources */,
-				A7CE7E7D25EEBD1700722D66 /* Alert.storyboard in Resources */,
 				A7CE7ED025EEBD1E00722D66 /* Metropolis-ExtraBold.otf in Resources */,
 				A7CE7ED625EEBD1E00722D66 /* Metropolis-Medium.otf in Resources */,
 				A7CE7EDC25EEBD1E00722D66 /* Metropolis-SemiBold.otf in Resources */,
@@ -1019,33 +1014,33 @@
 				A7CE7F1525EEBD2500722D66 /* ItemCollectionCell.swift in Sources */,
 				A7CE7F2325EEBD2500722D66 /* CustomImageLoadingType.swift in Sources */,
 				A7CE7EC725EEBD1E00722D66 /* ItemDetailLocalizables.swift in Sources */,
-				A7CE7E8025EEBD1700722D66 /* AlertViewController.swift in Sources */,
 				A7CE7E8B25EEBD1700722D66 /* MainViewCoordinator.swift in Sources */,
 				A7CE7E5625EEBCE600722D66 /* GenericValueProtocol.swift in Sources */,
 				A7CE7E2925EEBCD900722D66 /* FilterSearchStore.swift in Sources */,
 				A7CE7F1425EEBD2500722D66 /* GeneralLoadingViewCell.swift in Sources */,
-				A7CE7E4B25EEBCE500722D66 /* ErrorResult.swift in Sources */,
+				A799C43425F01AC200181BE3 /* AlertViewCoordinatorDelegate.swift in Sources */,
 				A7CE7E4E25EEBCE600722D66 /* BaseViewController.swift in Sources */,
 				A7CE7E2E25EEBCD900722D66 /* ImageCacheManager.swift in Sources */,
 				A7CE7F1F25EEBD2500722D66 /* ItemCollectionViewFlowLayoutData.swift in Sources */,
 				A7CE7E5725EEBCE600722D66 /* ApplicationStoryBoards.swift in Sources */,
 				A7CE7E5B25EEBCE600722D66 /* Coordinator.swift in Sources */,
+				A799C43725F01AC200181BE3 /* AlertViewCoordinator.swift in Sources */,
 				A7CE7E2125EEBCD900722D66 /* Resolver.swift in Sources */,
 				A7CE7E5125EEBCE600722D66 /* GenericCollectionViewCell.swift in Sources */,
-				A7CE7E2D25EEBCD900722D66 /* PopOverControllerManager.swift in Sources */,
 				A7CE7F6025EEC55000722D66 /* ButtonContainerComponent.swift in Sources */,
 				A7CE7F1D25EEBD2500722D66 /* CollectionLoadingState.swift in Sources */,
 				A7CE7ECA25EEBD1E00722D66 /* UIView+Extension.swift in Sources */,
 				A7CE7E7925EEBD1700722D66 /* ItemDetailCoordinator.swift in Sources */,
 				A7CE7F2C25EEBD2500722D66 /* HeaderView.swift in Sources */,
+				A799C45325F01E5D00181BE3 /* MainCoordinatorConstantValues.swift in Sources */,
 				A7CE7F1625EEBD2500722D66 /* CollectionInfoViewComponent.swift in Sources */,
 				A7CE7E2625EEBCD900722D66 /* SearchOperationFactory.swift in Sources */,
+				A799C44D25F01CF100181BE3 /* VisualContent.swift in Sources */,
 				A7CE7E2025EEBCD900722D66 /* DependencyManager.swift in Sources */,
 				A7CE7E7C25EEBD1700722D66 /* ItemDetailViewModel.swift in Sources */,
 				A7CE7F1825EEBD2500722D66 /* ItemDetailData.swift in Sources */,
 				A7CE7E2225EEBCD900722D66 /* Inject.swift in Sources */,
 				A7CE7E5325EEBCE600722D66 /* GenericTableViewCell.swift in Sources */,
-				A7CE7EC925EEBD1E00722D66 /* VisualContent.swift in Sources */,
 				A773195325EEB7C100525B31 /* ItunesCaseStudy.xcdatamodeld in Sources */,
 				A7CE7E8525EEBD1700722D66 /* SplashScreenViewModel.swift in Sources */,
 				A7CE7E8925EEBD1700722D66 /* PaginationInfo.swift in Sources */,
@@ -1059,13 +1054,13 @@
 				A7CE7E4C25EEBCE500722D66 /* GenericDataTypealises.swift in Sources */,
 				A7CE7E2825EEBCD900722D66 /* APIManagerInjectable.swift in Sources */,
 				A7D9D02D25EF73F100D486D5 /* SegmentedButtonComponentData.swift in Sources */,
+				A799C43625F01AC200181BE3 /* AlertViewController.swift in Sources */,
 				A7CE7F1725EEBD2500722D66 /* TitleInfoViewComponenData.swift in Sources */,
 				A7CE7F7025EEEE2C00722D66 /* MediaTypeData.swift in Sources */,
 				A7CE7E5025EEBCE600722D66 /* BaseCollectionViewCell.swift in Sources */,
 				A7CE7EC825EEBD1E00722D66 /* MainViewLocalizables.swift in Sources */,
 				A7CE7F2225EEBD2500722D66 /* CustomImageViewComponent.swift in Sources */,
 				A7CE7F1A25EEBD2500722D66 /* ItemCollectionComponent.swift in Sources */,
-				A7CE7E8125EEBD1700722D66 /* AlertViewCoordinator.swift in Sources */,
 				A7CE7E5A25EEBCE600722D66 /* CoordinatorDelegate.swift in Sources */,
 				A7CE7E4F25EEBCE600722D66 /* BaseTableViewCell.swift in Sources */,
 				A7CE7E8625EEBD1700722D66 /* SplashScreenViewController.swift in Sources */,
@@ -1073,6 +1068,7 @@
 				A7CE7EC625EEBD1E00722D66 /* AlertViewLocalizables.swift in Sources */,
 				A7CE7E4D25EEBCE500722D66 /* CommonTypealises.swift in Sources */,
 				A7CE7E4A25EEBCE500722D66 /* BaseCoordinator.swift in Sources */,
+				A799C43F25F01B0600181BE3 /* AlertButton.swift in Sources */,
 				A7CE7F1E25EEBD2500722D66 /* ItemCollectionViewFlowLayout.swift in Sources */,
 				A7CE7EC325EEBD1E00722D66 /* UserDefaultsWrapper.swift in Sources */,
 				A7CE7F1C25EEBD2500722D66 /* ItemCollectionComponentData.swift in Sources */,
@@ -1082,17 +1078,17 @@
 				A7CE7E8725EEBD1700722D66 /* MainViewController.swift in Sources */,
 				A7CE7E5225EEBCE600722D66 /* GenericBaseView.swift in Sources */,
 				A7D9D04725EFD55D00D486D5 /* ItemCollectionComponentDelegate.swift in Sources */,
-				A7CE7E7F25EEBD1700722D66 /* AlertViewModel.swift in Sources */,
-				A7CE7E7E25EEBD1700722D66 /* AlertViewCoordinatorDelegate.swift in Sources */,
 				A7CE7E7B25EEBD1700722D66 /* ItemDetailViewController.swift in Sources */,
 				A7CE7EDF25EEBD1E00722D66 /* FontManager.swift in Sources */,
 				A7CE7F2425EEBD2500722D66 /* DimmingView.swift in Sources */,
 				A7CE7F6825EEC6A800722D66 /* MediaButtonData.swift in Sources */,
+				A799C43525F01AC200181BE3 /* AlertViewModel.swift in Sources */,
 				A7CE7F1B25EEBD2500722D66 /* ItemView.swift in Sources */,
 				A7CE7E5525EEBCE600722D66 /* InteractivePopGestureDelegate.swift in Sources */,
 				A7CE7EC425EEBD1E00722D66 /* UserDefaultsGenericStructWrapper.swift in Sources */,
 				A7CE7F2125EEBD2500722D66 /* CustomImageViewComponentData.swift in Sources */,
 				A773194925EEB7C100525B31 /* AppDelegate.swift in Sources */,
+				A799C44025F01B0600181BE3 /* AlertButtonData.swift in Sources */,
 				A7CE7E2325EEBCD900722D66 /* Injectable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

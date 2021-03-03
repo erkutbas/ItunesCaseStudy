@@ -1,6 +1,6 @@
 //
 //  Coordinator.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 24.02.2021.
 //

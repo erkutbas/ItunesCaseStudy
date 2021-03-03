@@ -14,8 +14,8 @@
 "cancel" = "VAZGEÇ";
 "movie" = "Film";
 "music" = "Muzik";
-"podcast" = "Dijital Yayın";
-"all" = "Tümü";
+"app" = "Uygulama";
+"book" = "Kitap";
 
 // MARK: - Alert Info -
 "warningTitle" = "Uyarı";

@@ -1,6 +1,6 @@
 //
 //  GenericCollectionViewCell.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 24.02.2021.
 //
@@ -34,14 +34,5 @@ class GenericCollectionViewCell<DataType, ViewType: GenericBaseView<DataType>>: 
     func setRowData(data: DataType) {
         genericView.setData(data: data)
     }
-    
-//    func subscribeToSelectedRow(completion: @escaping GenericComponentDataProtocolCompletion) {
-//        genericView.startPressedAnimationCommon { [weak self](finish) in
-//            if finish {
-//                guard let data = self?.genericView.returnData() as? GenericComponentDataProtocol else { return }
-//                completion(data)
-//            }
-//        }
-//    }
     
 }

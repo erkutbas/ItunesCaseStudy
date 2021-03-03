@@ -1,6 +1,6 @@
 //
 //  MainViewController.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 25.02.2021.
 //
@@ -30,10 +30,6 @@ class MainViewController: BaseViewController<MainViewModel> {
 
         viewModel.getData()
 
-    }
-    
-    private lazy var buttonClickedListener: ButtonActionType = { [weak self] (actionIndex) in
-        print("XX takasi index : \(actionIndex)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,7 +64,7 @@ class MainViewController: BaseViewController<MainViewModel> {
     }
     
     private func addSegmentedButtonComponent() {
-        segmentedButton = SegmentedButtonComponent(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width - 60, height: 0)), data: viewModel.segmentedButtonComponentData)
+        segmentedButton = SegmentedButtonComponent(frame: CGRect(origin: .zero, size: SizeValues.segmentedButtonSize.value), data: viewModel.segmentedButtonComponentData)
         segmentedButton.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(segmentedButton)
@@ -77,7 +73,7 @@ class MainViewController: BaseViewController<MainViewModel> {
             segmentedButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             segmentedButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             segmentedButton.heightAnchor.constraint(equalToConstant: 40),
-            segmentedButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 40)
+            segmentedButton.widthAnchor.constraint(equalToConstant: SizeValues.segmentedButtonSize.value.width)
         ])
         
     }

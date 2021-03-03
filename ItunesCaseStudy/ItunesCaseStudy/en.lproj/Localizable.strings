@@ -12,10 +12,10 @@
 
 // MARK: - Filter View Localizables -
 "cancel" = "CANCEL";
-"movie" = "Movie";
+"movie" = "Movies";
 "music" = "Music";
-"podcast" = "Podcast";
-"all" = "All";
+"app" = "Apps";
+"book" = "Books";
 
 // MARK: - Alert Info -
 "warningTitle" = "Warning";

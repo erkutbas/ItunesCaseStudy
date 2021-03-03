@@ -1,6 +1,6 @@
 //
 //  ItemDetailViewModel.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 28.02.2021.
 //
@@ -34,13 +34,6 @@ class ItemDetailViewModel: BaseViewModelDelegate {
 
     private lazy var deleteButtonListener: OnDismissed = { [weak self] in
         self?.delegate?.selfDestroy()
-    }
-    
-    func deleteConfirmation() {
-        let data = AlertViewData(icon: VisualContents.iconWarning.value, title: AlertViewLocalizables.warningTitle.value, subTitle: AlertViewLocalizables.warningSubTitle.value)
-            .setButtons(by: createButtonData())
-
-        delegate?.fireAlert(with: data)
     }
     
     private func createButtonData() -> [AlertButtonData] {

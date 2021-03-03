@@ -1,6 +1,6 @@
 //
 //  ItemDetailCell.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 28.02.2021.
 //
@@ -38,7 +38,7 @@ class ItemDetailCell: BaseTableViewCell {
     
     func setupView(with data: ItemDetailData) {
         title.text = data.itunesSearchResult.trackName ?? data.itunesSearchResult.collectionName
-        contentAdvisoryRatingInfo.text = data.itunesSearchResult.contentAdvisoryRating
+        contentAdvisoryRatingContainerConf(with: data)
         primaryGenreNameInfo.text = data.itunesSearchResult.primaryGenreName
         countryInfo.text = data.itunesSearchResult.country
         currencyInfo.text = data.itunesSearchResult.currency
@@ -46,6 +46,16 @@ class ItemDetailCell: BaseTableViewCell {
         
         setRentPrice(with: data.itunesSearchResult.trackRentalPrice)
         setPurchasePrice(with: data.itunesSearchResult.trackPrice)
+    }
+    
+    private func contentAdvisoryRatingContainerConf(with data: ItemDetailData) {
+        if let rating = data.itunesSearchResult.contentAdvisoryRating {
+            contentAdvisoryRatingContainer.isHidden = false
+            contentAdvisoryRatingInfo.text = data.itunesSearchResult.contentAdvisoryRating
+        } else {
+            contentAdvisoryRatingContainer.isHidden = true
+        }
+        
     }
     
     private func setRentPrice(with data: Double?) {

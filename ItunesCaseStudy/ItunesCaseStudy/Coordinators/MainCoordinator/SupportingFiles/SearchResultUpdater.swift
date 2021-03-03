@@ -1,6 +1,6 @@
 //
 //  SearchResultUpdater.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 26.02.2021.
 //
@@ -23,7 +23,7 @@ class SearchResultUpdater: NSObject, UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
 
-        guard let text = searchController.searchBar.text, text.count > 0 else { return }
+        guard let text = searchController.searchBar.text, text.count > 2 else { return }
         
         searchWorkItem?.cancel()
         

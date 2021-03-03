@@ -1,6 +1,6 @@
 //
 //  GeneralLoadingViewCell.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 27.02.2021.
 //

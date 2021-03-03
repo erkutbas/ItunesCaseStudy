@@ -1,6 +1,6 @@
 //
 //  CustomImageLoadingType.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 1.03.2021.
 //

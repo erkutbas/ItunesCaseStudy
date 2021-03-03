@@ -1,6 +1,6 @@
 //
 //  AlertViewModel.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 28.02.2021.
 //

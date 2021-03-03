@@ -1,6 +1,6 @@
 //
 //  MainViewModel.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 25.02.2021.
 //
@@ -48,7 +48,7 @@ class MainViewModel: BaseViewModelDelegate {
             self?.callBackHandler(with: result)
         }
 
-        itunesSearchUseCase.execute(useCaseCallBack: callBack, params: requestData.setOffset(by: paginationInfo.offset))
+        itunesSearchUseCase.execute(useCaseCallBack: callBack, params: requestData.setLimit(by: paginationInfo.limit).setOffset(by: paginationInfo.offset))
     }
 
     // MARK: - Public Methods -
@@ -96,7 +96,7 @@ class MainViewModel: BaseViewModelDelegate {
                          MediaButtonData(mediaItemType: .music).appendNewAction(with: buttonClickedListener),
                          MediaButtonData(mediaItemType: .app).appendNewAction(with: buttonClickedListener),
                          MediaButtonData(mediaItemType: .books).appendNewAction(with: buttonClickedListener)]
-        return SegmentedButtonComponentData(buttonContainerData: ButtonContainerComponentData(buttons:  tempArray))
+        return SegmentedButtonComponentData(buttonContainerData: ButtonContainerComponentData(buttons:  tempArray)).setFocusedSegment(by: tempArray.firstIndex(where: { $0.mediaItemType.value.metadata == FilterSearchStore.selectedFilter }))
     }()
     
     // MARK: - Private Methods -
@@ -119,7 +119,7 @@ class MainViewModel: BaseViewModelDelegate {
     private func handleResponse(with data: ItunesSearchResponse) {
         guard let itunesResult = data.results else { return }
         searchData.append(contentsOf: itunesResult)
-        itemCollectionCellModelData = searchData.map({ ItemCollectionCellModel(infoViewData: CollectionInfoViewComponentData(price: $0.collectionPrice ?? 0, name: $0.collectionName ?? "unKnown", release: $0.releaseDate?.readableData() ?? "N/A"), imageContainer: CustomImageViewComponentData(imageUrl: $0.artworkUrl100 ?? "")) })
+        itemCollectionCellModelData = searchData.map({ ItemCollectionCellModel(infoViewData: CollectionInfoViewComponentData(price: $0.collectionPrice ?? 0, name: $0.collectionName ?? "unKnown", release: $0.releaseDate?.readableData() ?? "N/A"), imageContainer: CustomImageViewComponentData(imageUrl: $0.artworkUrl100?.replacingOccurrences(of: "100x100", with: "400x400") ?? "")) })
         paginationInfo.resultCount = data.resultCount ?? 0
     }
     
@@ -148,7 +148,10 @@ class MainViewModel: BaseViewModelDelegate {
     }
     
     private lazy var buttonClickedListener: ButtonActionType = { [weak self] (actionIndex) in
-        print("XX takasi index : \(actionIndex)")
+        guard let self = self else { return }
+        self.requestData.media = self.segmentedButtonComponentData.buttonContainerData.buttons[actionIndex].mediaItemType.value.metadata
+        FilterSearchStore.selectedFilter = self.requestData.media
+        self.refreshList()
     }
 }
 

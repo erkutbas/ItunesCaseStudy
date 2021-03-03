@@ -1,6 +1,6 @@
 //
 //  GenericTableViewCell.swift
-//  ItunesCodeCase
+//  ItunesCaseStudy
 //
 //  Created by Erkut Bas on 24.02.2021.
 //
@@ -34,22 +34,5 @@ class GenericTableViewCell<DataType, ViewType: GenericBaseView<DataType>>: BaseT
     func setRowData(data: DataType) {
         genericView.setData(data: data)
     }
-    
-//    func subscribeToSelectedRow(completion: @escaping GenericDataProtocolCompletion) {
-//        isUserInteractionEnabled = false
-//        genericView.startPressedAnimationCommon { [weak self](finish) in
-//            if finish {
-//                self?.isUserInteractionEnabled = true
-//                guard let data = self?.genericView.returnData() as? GenericRowDataProtocol else { return }
-//                completion(data)
-//            }
-//        }
-//    }
-//    
-//    func returnGenericRowData() -> GenericRowDataProtocol? {
-//        guard let data = self.genericView.returnData() as? GenericRowDataProtocol else { return nil }
-//        return data
-//        
-//    }
     
 }
