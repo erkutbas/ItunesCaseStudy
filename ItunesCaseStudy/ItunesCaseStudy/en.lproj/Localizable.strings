@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  ItunesCaseStudy
+
+  Created by Erkut Bas on 02.02.2021.
+  
+*/
+
+// MARK: - Main View Localizables -
+"itunesSearchViewController" = "Itunes Search";
+"searchBarPlaceHolderText" = "Search media";
+
+// MARK: - Filter View Localizables -
+"cancel" = "CANCEL";
+"movie" = "Movies";
+"music" = "Music";
+"app" = "Apps";
+"book" = "Books";
+
+// MARK: - Alert Info -
+"warningTitle" = "Warning";
+"warningSubTitle" = "Item you have examined in detail will be removed permanently. Are you sure to proceed?";
+"okButton" = "Yes";
+"cancelButton" = "Cancel";
+
+// MARK: - Detail View Localizables -
+"rent" = "Rent";
+"buy" = "Buy";

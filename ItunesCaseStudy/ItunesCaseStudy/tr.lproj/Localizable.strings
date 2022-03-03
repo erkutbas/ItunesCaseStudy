@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  ItunesCaseStudy
+
+  Created by Erkut Bas on 02.02.2021.
+  
+*/
+
+// MARK: - Main View Localizables -
+"itunesSearchViewController" = "Itunes Arama Sonuç";
+"searchBarPlaceHolderText" = "Ara";
+
+// MARK: - Filter View Localizables -
+"cancel" = "VAZGEÇ";
+"movie" = "Film";
+"music" = "Muzik";
+"app" = "Uygulama";
+"book" = "Kitap";
+
+// MARK: - Alert Info -
+"warningTitle" = "Uyarı";
+"warningSubTitle" = "Detayını görüntülediğiniz içerik arama sonuçları listesinden tamamem kaldırılacaktır.";
+"okButton" = "Tamam";
+"cancelButton" = "Vazgeç";
+
+// MARK: - Detail View Localizables -
+"rent" = "Kirala";
+"buy" = "Satın al";
